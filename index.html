@@ -22,5 +22,11 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+	<script>
+		$('.input').on('keyup', function(){
+			data = $('.input').val().replace(/(.)/g, '$1\t')
+			$('.output').val(data)
+		})
+	</script>
 </body>
 </html>
